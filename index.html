@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="">
+    <h1 class="text-center text-2xl m-5">Counter</h1>
+    <div class="flex flex-col justify-center items-center bg-slate-800 text-white h-48 w-1/5 m-auto rounded-lg">
+   <h1 class="counter-value text-5xl font-bold">0</h1>
+   <div class="space-x-9 mt-10 font-semibold">
+    <button data-action="Decrease"   class=" decrease text-pink-500">Decrease</button>
+    <button data-action="Reset"  class=" reset text-gray-300">Reset</button>
+    <button  data-action="Increase" class="  increase text-pink-500">Increase</button>
+</div>
+
+</div>
+    <div class="flex justify-center space-x-9 font-bold m-5">
+    <button data-action="Save"  class="save">Save</button>
+    <button data-action="Load"  class="load">Load</button>
+    <button data-action="Clear"  class="clear">Clear</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
