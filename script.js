@@ -10,11 +10,18 @@ var counterValue = 0
 decrease.addEventListener('click',()=>{
    counterValue--
    counter.innerText = counterValue
+   
 })
+
+
 increase.addEventListener('click',()=>{
    
    counterValue++
    counter.innerText = counterValue
+   if (counterValue > 0) {
+      console.log("on if qsjb");
+      decrease.classList.remove('hidden')
+   }
  
 })
 save.addEventListener('click' , () =>{
@@ -26,6 +33,10 @@ reset.addEventListener('click' , () =>{
    
    counter.innerText = 0
    counterValue=0
+   if (counterValue == 0) {
+      console.log("on if qsjb");
+      decrease.classList.add('hidden')
+   }
 })
 
 load.addEventListener('click' , () =>{
