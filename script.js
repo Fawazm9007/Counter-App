@@ -28,6 +28,7 @@ save.addEventListener('click' , () =>{
       
    localStorage.setItem('Value',counterValue)
    console.log(counterValue);
+   
 })
 reset.addEventListener('click' , () =>{
    
@@ -49,6 +50,7 @@ load.addEventListener('click' , () =>{
    }else{
       counter.innerText = counterValue
    }
+   counterValue = counterload 
 })
 clear.addEventListener('click' , () =>{
    localStorage.removeItem('Value')
